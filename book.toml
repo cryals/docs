@@ -1,7 +1,7 @@
 [book]
 authors = ["Space Wizards Contributors"]
-language = "en"
-multilingual = false
+language = "multilingual"
+multilingual = true
 src = "src"
 title = "Space Wizards Development Wiki"
 description = "Tutorial & reference for all Space Wizards Federation projects, including the Robust Toolbox engine and its flagship open source game, Space Station 14."
@@ -20,8 +20,16 @@ before = ["mermaid","admonish","emojicodes"] # templates can include these so we
 [preprocessor.embedify]
 
 [output.html]
-additional-js = ['scripts/mermaid.min.js', 'scripts/mermaid-init.js', 'scripts/nav-additions.js']
-additional-css = ['theme/compiled/ss14.css']
+additional-js = [
+    'scripts/mermaid.min.js',
+    'scripts/mermaid-init.js',
+    'scripts/nav-additions.js',
+    'scripts/language-switch.js'
+]
+additional-css = [
+    'theme/compiled/ss14.css',
+    'theme/language-switch.css'
+]
 default-theme = "navy"
 preferred-dark-theme = "navy"
 
@@ -52,6 +60,8 @@ warning-policy = "ignore" # false-positives like hell with absolute links & late
 # Wiki.js doesn't have `.html` endings on files, so we hack it by putting /index.html
 # and just letting the browser look there, then get redirected
 [output.html.redirect]
+# "/ru//index.html" = "/ru/index.html"
+# can fix “//” in url on main when switching language. Probably...
 "/en/getting-started/how-do-i-code/index.html" = "/en/general-development/setup/howdoicode.html"
 "/en/getting-started/dev-setup/index.html" = "/en/general-development/setup/setting-up-a-development-environment.html"
 "/en/getting-started/git/index.html" = "/en/general-development/setup/git-for-the-ss14-developer.html"
