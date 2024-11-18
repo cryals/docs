@@ -1,7 +1,7 @@
 #language-switch {
     position: absolute;
     top: 50%;
-    left: 220px;
+    left: 185px;
     transform: translateY(-50%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1000;
