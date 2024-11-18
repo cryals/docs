@@ -1,3 +1,7 @@
+README language: \
+[![En](https://img.shields.io/badge/en-green)](README.md)
+[![Ru](https://img.shields.io/badge/ru-gray)](README-ru.md)
+
 # Space Wizards Development Wiki
 
 This is the `mdbook`-based developer documentation for all Space Wizards projects, including Robust Toolbox, Space Station 14, the SS14 launcher, etc. These docs cover many topics and can be potentially very useful for mappers, spriters, active contributors & prospective contributors, people who want to use our engine for their own projects, fork developers, and so on.
