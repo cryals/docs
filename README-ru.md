@@ -1,5 +1,5 @@
-﻿README language: \
-[![En](https://img.shields.io/badge/en-gray)](README.md)  
+Язык README: \
+[![En](https://img.shields.io/badge/en-gray)](README.md)
 [![Ru](https://img.shields.io/badge/ru-green)](README-ru.md)
 
 # Wiki для разработчиков Space Wizards
