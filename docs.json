@@ -1,53 +1,18 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
-  "name": "Ratgore",
+  "theme": "maple",
+  "name": "Ratgore Wiki",
+  "description": "Энциклопедия космической войны в секторе Ratgore",
   "colors": {
     "primary": "#DC2626",
     "light": "#EF4444",
     "dark": "#991B1B"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "global": {
-      "languages": [
-        {
-          "language": "ru",
-          "href": "/"
-        }
-      ]
-    },
-    "groups": [
-      {
-        "group": "Начало работы",
-        "pages": [
-          "introduction",
-          "quickstart",
-          "installation"
-        ]
-      },
-      {
-        "group": "Игра",
-        "pages": [
-          "gameplay/basics",
-          "gameplay/mechanics",
-          "gameplay/ships"
-        ]
-      },
-      {
-        "group": "Разработка",
-        "pages": [
-          "development/setup",
-          "development/building",
-          "development/contributing"
-        ]
-      }
-    ]
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://github.com/Odleer/Ratgore"
+    "href": "/"
   },
   "navbar": {
     "links": [
@@ -59,22 +24,269 @@
         "label": "GitHub",
         "href": "https://github.com/Odleer/Ratgore"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Скачать",
-      "href": "https://github.com/Odleer/Ratgore/releases"
-    }
+    ]
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "cursor",
-      "vscode"
+  "anchors": [
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/sC5Q43dKKU"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/Odleer/Ratgore"
+    }
+  ],
+  "topbarLinks": [
+    {
+      "name": "Правила",
+      "url": "/rules"
+    }
+  ],
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/Odleer/Ratgore"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Основное",
+        "pages": [
+          "index",
+          "rules",
+          "stations",
+          "for-editors"
+        ]
+      },
+      {
+        "group": "Гайды",
+        "pages": [
+          "guides/weapons",
+          "guides/armor",
+          "guides/roles",
+          "guides/mining",
+          "guides/salvaging",
+          "guides/research",
+          "guides/psionics"
+        ]
+      },
+      {
+        "group": "Лига Рабочих Нового Полумесяца",
+        "pages": [
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/crescent/lore/history",
+              "factions/crescent/lore/factions",
+              "factions/crescent/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/crescent/ships/combat/fighter",
+                  "factions/crescent/ships/combat/corvette",
+                  "factions/crescent/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/crescent/ships/civilian/transport",
+                  "factions/crescent/ships/civilian/miner",
+                  "factions/crescent/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Божественный Мандат Солнца",
+        "pages": [
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/sun-mandate/lore/history",
+              "factions/sun-mandate/lore/factions",
+              "factions/sun-mandate/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/sun-mandate/ships/combat/fighter",
+                  "factions/sun-mandate/ships/combat/corvette",
+                  "factions/sun-mandate/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/sun-mandate/ships/civilian/transport",
+                  "factions/sun-mandate/ships/civilian/miner",
+                  "factions/sun-mandate/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Новый Американский Протекторат",
+        "pages": [
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/american-protectorate/lore/history",
+              "factions/american-protectorate/lore/factions",
+              "factions/american-protectorate/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/american-protectorate/ships/combat/fighter",
+                  "factions/american-protectorate/ships/combat/corvette",
+                  "factions/american-protectorate/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/american-protectorate/ships/civilian/transport",
+                  "factions/american-protectorate/ships/civilian/miner",
+                  "factions/american-protectorate/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Вольные Кларизианские Герцогства",
+        "pages": [
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/klarizian-duchies/lore/history",
+              "factions/klarizian-duchies/lore/factions",
+              "factions/klarizian-duchies/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/klarizian-duchies/ships/combat/fighter",
+                  "factions/klarizian-duchies/ships/combat/corvette",
+                  "factions/klarizian-duchies/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/klarizian-duchies/ships/civilian/transport",
+                  "factions/klarizian-duchies/ships/civilian/miner",
+                  "factions/klarizian-duchies/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Коалиция Вольных Станций Тайпана",
+        "pages": [
+          {
+            "group": "Гайды",
+            "pages": [
+              "factions/taipan/guides/introduction",
+              "factions/taipan/guides/ships",
+              "factions/taipan/guides/equipment",
+              "factions/taipan/guides/mining",
+              "factions/taipan/guides/trading",
+              "factions/taipan/guides/ammunition",
+              "factions/taipan/guides/repair"
+            ]
+          },
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/taipan/lore/history",
+              "factions/taipan/lore/factions",
+              "factions/taipan/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/taipan/ships/combat/fighter",
+                  "factions/taipan/ships/combat/corvette",
+                  "factions/taipan/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/taipan/ships/civilian/transport",
+                  "factions/taipan/ships/civilian/miner",
+                  "factions/taipan/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Центральная Власть Солнца",
+        "pages": [
+          {
+            "group": "Лор",
+            "pages": [
+              "factions/central-sun/lore/history",
+              "factions/central-sun/lore/factions",
+              "factions/central-sun/lore/narrative"
+            ]
+          },
+          {
+            "group": "Корабли",
+            "pages": [
+              {
+                "group": "Боевые",
+                "pages": [
+                  "factions/central-sun/ships/combat/fighter",
+                  "factions/central-sun/ships/combat/corvette",
+                  "factions/central-sun/ships/combat/destroyer"
+                ]
+              },
+              {
+                "group": "Гражданские",
+                "pages": [
+                  "factions/central-sun/ships/civilian/transport",
+                  "factions/central-sun/ships/civilian/miner",
+                  "factions/central-sun/ships/civilian/trader"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "footer": {
@@ -82,41 +294,5 @@
       "discord": "https://discord.gg/sC5Q43dKKU",
       "github": "https://github.com/Odleer/Ratgore"
     }
-  },
-  "topbarLinks": [
-    {
-      "name": "Поддержка",
-      "url": "https://discord.gg/sC5Q43dKKU"
-    }
-  ],
-  "topbarCtaButton": {
-    "type": "github",
-    "url": "https://github.com/Odleer/Ratgore"
-  },
-  "tabs": [
-    {
-      "name": "Документация",
-      "url": "docs"
-    },
-    {
-      "name": "API",
-      "url": "api"
-    },
-    {
-      "name": "Changelog",
-      "url": "changelog"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Discord сервер",
-      "icon": "discord",
-      "url": "https://discord.gg/sC5Q43dKKU"
-    },
-    {
-      "name": "GitHub репозиторий",
-      "icon": "github",
-      "url": "https://github.com/Odleer/Ratgore"
-    }
-  ]
+  }
 }

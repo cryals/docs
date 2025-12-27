@@ -1,0 +1,180 @@
+---
+title: "Главная"
+description: "Ratgore — Забытый сектор. Место, где империи умирают, а крысы выживают"
+mode: "custom"
+icon: "space-awesome"
+---
+
+import { Icon } from '@mintlify/components';
+
+<div className="py-8 px-4 sm:py-12 md:py-16 sm:px-6 lg:px-8">
+
+  {/* Hero Section */}
+  <div className="text-center mb-8 sm:mb-12">
+    {/* Main Title */}
+    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-wider sm:tracking-widest leading-none mb-3 sm:mb-4">
+      <span className="bg-gradient-to-b from-red-500 via-red-600 to-red-900 bg-clip-text text-transparent drop-shadow-2xl">
+        RATGORE
+      </span>
+    </h1>
+
+    {/* Divider with lines */}
+    <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-6 px-4">
+      <div className="w-8 sm:w-16 md:w-20 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
+      <p className="text-xs sm:text-base md:text-lg lg:text-xl text-gray-400 tracking-[0.2em] sm:tracking-[0.3em] font-light whitespace-nowrap">
+        ЗАБЫТЫЙ СЕКТОР
+      </p>
+      <div className="w-8 sm:w-16 md:w-20 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
+    </div>
+
+    {/* Description */}
+    <p className="max-w-2xl mx-auto text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed px-4">
+      Место, где империи умирают, а крысы выживают. Фракционные войны раздирают сектор, 
+      корабельные сражения в обломках флотов, а смерть — лишь вопрос времени.
+    </p>
+  </div>
+
+  {/* Factions - List Style */}
+  <div className="max-w-4xl mx-auto mb-12 sm:mb-16 space-y-2 sm:space-y-3">
+    <a href="/factions/crescent" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="hammer" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Лига Рабочих</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Революционеры за свободу и равенство</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+
+    <a href="/factions/sun-mandate" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="crown" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Божественный Мандат</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Империя Солнца восстанавливает величие</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+
+    <a href="/factions/srm" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="mask" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Шестая Улица</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Мафиозные семьи и теневые операции</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+
+    <a href="/factions/shi" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="industry" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Синогара</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Тяжёлая промышленность и корпорации</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+
+    <a href="/factions/taipan" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="link" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Коалиция</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Вольная станция и синдикаты</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+
+    <a href="/factions/minutemen" className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+      hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+      transition-all duration-300 group active:scale-[0.98]">
+      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+        <Icon icon="crosshairs" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors truncate">Минитмены</p>
+        <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors line-clamp-1">Независимые операторы</p>
+      </div>
+      <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+    </a>
+  </div>
+
+  {/* Bottom Section */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
+    
+    {/* Resources */}
+    <div>
+      <h3 className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 sm:mb-4">Ресурсы</h3>
+      <div className="space-y-2 sm:space-y-3">
+        <a href="https://github.com/Odleer/Ratgore" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+          hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+          transition-all duration-300 group active:scale-[0.98]">
+          <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+            <Icon icon="github" iconType="brands" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors">GitHub</p>
+            <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors">Исходный код и разработка</p>
+          </div>
+          <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+        </a>
+        
+        <a href="https://discord.gg/sC5Q43dKKU" target="_blank" rel="noopener noreferrer"
+          className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-gray-800 bg-gray-900/30 
+          hover:border-red-600/60 hover:bg-red-950/20 hover:shadow-[0_0_15px_rgba(220,38,38,0.1)] 
+          transition-all duration-300 group active:scale-[0.98]">
+          <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gray-800/60 group-hover:bg-red-900/40 transition-colors flex-shrink-0">
+            <Icon icon="discord" iconType="brands" size={20} className="sm:w-6 sm:h-6 text-gray-300 group-hover:text-red-400 transition-colors" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-red-400 transition-colors">Discord</p>
+            <p className="text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-400 transition-colors">Общение и координация</p>
+          </div>
+          <Icon icon="arrow-right" size={14} className="sm:w-4 sm:h-4 text-gray-600 group-hover:text-red-400 group-hover:translate-x-1 transition-all flex-shrink-0" />
+        </a>
+      </div>
+    </div>
+
+    {/* Discord Widget */}
+    <div>
+      <h3 className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 sm:mb-4">Сообщество</h3>
+      <div className="rounded-lg sm:rounded-xl overflow-hidden border border-gray-800 bg-gray-900/30 hover:border-red-600/40 transition-all w-full flex items-center">
+        <iframe 
+          src="https://discord.com/widget?id=1318776836599320657&theme=dark" 
+          width="288" 
+          height="266"
+          allowTransparency="true"
+          frameBorder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+  @supports (background-clip: text) {
+    span.drop-shadow-2xl {
+      text-shadow: 
+        0 0 30px rgba(220, 38, 38, 0.4),
+        0 0 60px rgba(220, 38, 38, 0.2);
+    }
+  }
+`}</style>
