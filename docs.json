@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "willow",
+  "name": "Ratgore",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#DC2626",
+    "light": "#EF4444",
+    "dark": "#991B1B"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -13,46 +13,110 @@
       "languages": [
         {
           "language": "ru",
-          "href": "https://mintlify.com"
+          "href": "/"
         }
       ]
     },
-    "groups": []
+    "groups": [
+      {
+        "group": "Начало работы",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "installation"
+        ]
+      },
+      {
+        "group": "Игра",
+        "pages": [
+          "gameplay/basics",
+          "gameplay/mechanics",
+          "gameplay/ships"
+        ]
+      },
+      {
+        "group": "Разработка",
+        "pages": [
+          "development/setup",
+          "development/building",
+          "development/contributing"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://github.com/Odleer/Ratgore"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Discord",
+        "href": "https://discord.gg/sC5Q43dKKU"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/Odleer/Ratgore"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Скачать",
+      "href": "https://github.com/Odleer/Ratgore/releases"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/sC5Q43dKKU",
+      "github": "https://github.com/Odleer/Ratgore"
     }
-  }
+  },
+  "topbarLinks": [
+    {
+      "name": "Поддержка",
+      "url": "https://discord.gg/sC5Q43dKKU"
+    }
+  ],
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/Odleer/Ratgore"
+  },
+  "tabs": [
+    {
+      "name": "Документация",
+      "url": "docs"
+    },
+    {
+      "name": "API",
+      "url": "api"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Discord сервер",
+      "icon": "discord",
+      "url": "https://discord.gg/sC5Q43dKKU"
+    },
+    {
+      "name": "GitHub репозиторий",
+      "icon": "github",
+      "url": "https://github.com/Odleer/Ratgore"
+    }
+  ]
 }
