@@ -13,11 +13,7 @@
     "default": "dark",
     "strict": true
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/logo.png",
-    "href": "/"
-  },
+  "logo": "/logo/logo.png",
   "navbar": {
     "links": [
       {
