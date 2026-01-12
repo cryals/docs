@@ -13,7 +13,7 @@
     "default": "dark",
     "strict": true
   },
-  "logo": "/logo/logo.png",
+  "logo": "/logo.png",
   "navbar": {
     "links": [
       {
